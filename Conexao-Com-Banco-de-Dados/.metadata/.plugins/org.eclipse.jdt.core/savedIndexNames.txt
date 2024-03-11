@@ -1,0 +1,5 @@
+INDEX VERSION 1.132+C:\Users\logonrmlocal\Desktop\Conexao-Com-Banco-de-Dados\.metadata\.plugins\org.eclipse.jdt.core
+585378567.index
+3344539117.index
+1865797976.index
+2996731160.index

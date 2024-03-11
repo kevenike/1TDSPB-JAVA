@@ -1,0 +1,10 @@
+package br.com.fiap.main;
+
+import br.com.fiap.conexoes.ConnectionFactory;
+
+public class TesteConexao {
+	public static void main(String args[]) {
+		Connection cn = new ConnectionFactory().conexao();
+	}
+
+}
