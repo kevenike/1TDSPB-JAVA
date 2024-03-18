@@ -1,0 +1,25 @@
+package br.com.fiap.beans;
+
+public class Produto {
+	
+	private int codigo;
+	private String tipo;
+	private String marca;
+	private double valor;
+	
+	public Produto() {
+		super();
+	}
+
+	public Produto(int codigo, String tipo, String marca, double valor) {
+		super();
+		this.codigo = codigo;
+		this.tipo = tipo;
+		this.marca = marca;
+		this.valor = valor;
+	}
+	
+	
+	
+	
+}

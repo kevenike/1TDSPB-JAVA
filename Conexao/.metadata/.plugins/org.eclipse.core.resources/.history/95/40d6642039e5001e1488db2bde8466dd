@@ -1,0 +1,17 @@
+package br.com.fiap.main;
+
+import java.sql.SQLException;
+
+import br.com.fiap.beans.Produto;
+import br.com.fiap.dao.ProdutoDAO;
+
+public class TesteCadastrar {
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Produto produto = new Produto();
+		
+		ProdutoDAO dao = new ProdutoDAO();
+		
+		
+	}
+}
