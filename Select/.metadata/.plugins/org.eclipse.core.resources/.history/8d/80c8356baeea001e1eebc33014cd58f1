@@ -1,0 +1,15 @@
+package br.com.fia.dao;
+
+import java.sql.Connection;
+
+public class ProduoDAO {
+	
+	public Connection minhaConexao;
+
+	public ProduoDAO() {
+		super();
+		
+	}
+	
+	
+}

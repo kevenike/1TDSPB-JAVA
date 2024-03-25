@@ -1,0 +1,87 @@
+package br.com.fia.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiap.beans.Produto;
+import br.com.fiap.conexoes.ConexaoFactory;
+
+public class ProdutoDAO {
+	
+	public Connection minhaConexao;
+
+	public ProdutoDAO() throws ClassNotFoundException, SQLException {
+		super();
+		this.minhaConexao = new ConexaoFactory().conexao();
+	}
+	
+	// insert 
+	public String inserir(Produto produto) throws SQLException {
+		PreparedStatement statement = minhaConexao.prepareStatement
+				(" insert into  T_FIAP_PRODUTO values(?, ?, ?, ?)");
+		
+		statement.setInt(1, produto.getCodigo());
+		statement.setString(2, produto.getTipo());
+		statement.setString(3, produto.getMarca());
+		statement.setDouble(4, produto.getValor());
+		statement.execute();
+		statement.close();
+		
+		
+		return "Cadastrado com Sucesso";
+	}
+	
+	public String deletar(Produto produto) throws SQLException {
+		PreparedStatement statement = minhaConexao.prepareStatement
+				(" Delete from T_FIAP_PRODUTO where CODIGO = ? ");
+		
+		statement.setInt(1, produto.getCodigo());
+		statement.execute();
+		statement.close();
+		
+		return "Deletar";
+	}
+	
+	
+	public String atualizar(Produto produto) throws SQLException {
+		PreparedStatement statement = minhaConexao.prepareStatement
+				(" Update T_FIAP_PRODUTO set TIPO = ?, MARCA = ?, VALOR = ? where CODIGO = ?");
+		
+		statement.setString(1, produto.getTipo());
+		statement.setString(2, produto.getMarca());
+		statement.setDouble(3, produto.getValor());
+		statement.setInt(4, produto.getCodigo());
+		statement.executeUpdate();
+		statement.close();
+		
+		return "Atualizado com Sucesso";
+	}
+	
+	//Select
+	public List <Produto> selecionar() throws SQLException{
+		List<Produto> listProduto = new ArrayList<Produto>();
+		
+		PreparedStatement statement = minhaConexao.prepareStatement
+				("Select from  T_FIAP_PRODUTO");
+		ResultSet rs = statement.executeQuery();
+		
+		while(rs.next()) {
+			Produto produto = new Produto();
+			produto.setCodigo(rs.getInt(1));
+			produto.setTipo(rs.getString(2));
+			produto.setMarca(rs.getString(3));
+			produto.setValor(rs.getDouble(4));
+			listProduto.add(produto);
+		}
+		
+		
+		return listProduto;
+		
+	}
+	
+	
+}

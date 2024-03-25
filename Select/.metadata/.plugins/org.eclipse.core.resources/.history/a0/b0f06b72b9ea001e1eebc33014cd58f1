@@ -1,0 +1,12 @@
+package br.com.fiap.main;
+
+import br.com.fia.dao.ProdutoDAO;
+
+public class TesteSelecionar {
+
+	public static void main(String[] args) {
+		ProdutoDAO produtoDAO = new ProdutoDAO();
+
+	}
+
+}

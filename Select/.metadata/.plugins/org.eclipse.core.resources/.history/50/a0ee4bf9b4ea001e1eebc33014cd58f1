@@ -1,0 +1,21 @@
+package br.com.fiap.main;
+
+import java.sql.SQLException;
+
+import javax.swing.JOptionPane;
+
+import br.com.fia.dao.ProdutoDAO;
+
+public class TesteDeletar {
+
+	static double real(String j) {
+		return Double.parseDouble(JOptionPane.showInputDialog(j));
+	}
+	
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		ProdutoDAO produtoDAO = new ProdutoDAO();
+		
+		
+	}
+
+}
