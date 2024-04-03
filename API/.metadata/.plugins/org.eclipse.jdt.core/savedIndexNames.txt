@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+C:\Users\Claudio\Desktop\API\.metadata\.plugins\org.eclipse.jdt.core
+2237816510.index
+1597124776.index
+3812409360.index
+451724911.index
+1865797976.index
+4105005768.index

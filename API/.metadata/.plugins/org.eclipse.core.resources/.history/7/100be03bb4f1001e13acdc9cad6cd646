@@ -1,0 +1,25 @@
+package br.com.fiap.services;
+
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+
+import br.com.fiap.model.Endereco;
+
+public class ViaCepService {
+
+	// metodo
+	public Endereco getEndereco(String cep) {
+	   
+		Endereco endereco = null;
+		
+		// Request
+		HttpGet request = new HttpGet("https://viacep.com.br/ws/"+cep+"/json/");
+		
+		// Client
+		CloseableHttpClient httpClient = HttpClientBuilder.create().disableRedirectHandling().build();
+		
+		return endereco;
+	}
+	
+}

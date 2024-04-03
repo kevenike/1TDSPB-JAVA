@@ -1,0 +1,16 @@
+package br.com.fiap.main;
+
+import br.com.fiap.services.ViaCepService;
+
+public class TesteViaCep {
+
+	public static void main(String[] args) {
+		// Instancia objetos
+		ViaCepService viaCep = new ViaCepService();
+		
+		
+		
+		
+	}
+
+}
