@@ -1,0 +1,20 @@
+package br.com.fiap.main;
+
+import javax.swing.JOptionPane;
+
+import br.com.fiap.model.Endereco;
+import br.com.fiap.services.ViaCepService;
+
+public class ExecutarSistema {
+
+	public static void main(String[] args) {
+		// instaciar objeto
+		ViaCepService viap = new ViaCepService();
+		
+		String cep = JOptionPane.showInputDialog("Informe o CEP para consulta");
+		
+		Endereco endereco = viaCep.getEnderco(cep);
+
+	}
+
+}

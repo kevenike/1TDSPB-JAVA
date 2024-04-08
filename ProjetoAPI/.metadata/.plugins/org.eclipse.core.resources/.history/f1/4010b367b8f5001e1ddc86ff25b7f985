@@ -1,0 +1,36 @@
+package br.com.fiap.services;
+
+import java.io.IOException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+
+import br.com.fiap.model.Endereco;
+
+public class ViaCepService {
+	
+	// metodo
+	public Endereco getEndereco(String cep) throws ClientProtocolException, IOException {
+		
+		Endereco endereco = null;
+		
+		// Request
+		HttpGet resquest = new HttpGet("https://viacep.com.br/ws/" + cep + "/json/");
+		
+		
+		// Client
+		CloseableHttpClient httpClent = HttpClientBuilder.create().disableRedirectHandling().build();
+		
+		// Response 
+		CloseableHttpResponse response = httpClent.execute(resquest);
+		
+		// Entity
+		HttpEntity entity = response.getEntity();
+		
+		return endereco;
+	}
+}

@@ -1,0 +1,26 @@
+package br.com.fiap.main;
+
+import java.io.IOException;
+
+import javax.swing.JOptionPane;
+
+import org.apache.http.client.ClientProtocolException;
+
+import br.com.fiap.model.Endereco;
+import br.com.fiap.services.ViaCepService;
+
+public class ExecutarSistema {
+
+	public static void main(String[] args) throws ClientProtocolException, IOException {
+		// instaciar objeto
+		ViaCepService viaCep = new ViaCepService();
+		
+		String cep = JOptionPane.showInputDialog("Informe o CEP para consulta");
+		
+		Endereco endereco = viaCep.getEndereco(cep);
+		
+		
+
+	}
+
+}

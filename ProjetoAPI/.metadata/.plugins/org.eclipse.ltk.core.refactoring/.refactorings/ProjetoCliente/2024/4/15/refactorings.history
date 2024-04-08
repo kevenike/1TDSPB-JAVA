@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;br.com.fiap.beans&apos; to &apos;ProjetoClienteW/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;ProjetoCliente&apos;&#x0D;&#x0A;- Destination element: &apos;ProjetoClienteW/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;ProjetoCliente/src/br.com.fiap.beans&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=ProjetoClienteW/src\/main\/java" element1="/src&lt;br.com.fiap.beans" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1712583671979" version="1.0"/>
+</session>
