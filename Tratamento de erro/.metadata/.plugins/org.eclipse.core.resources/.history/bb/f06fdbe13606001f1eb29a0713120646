@@ -1,0 +1,16 @@
+package br.com.fiap.excecoes;
+
+public class Excecoes extends Exception {
+	
+	public Excecoes() {
+		super();
+	}
+	
+	public Excecoes(Exception e) {
+		super();
+		if(e.getClass().toString().equals("Class java.lang.ArithmeticException"
+				+ "")) {
+			
+		}
+	}
+}

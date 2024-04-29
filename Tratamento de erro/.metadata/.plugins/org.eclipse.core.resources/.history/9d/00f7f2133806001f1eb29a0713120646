@@ -1,0 +1,20 @@
+package br.com.fiap.excecoes;
+
+public class Excecoes extends Exception {
+	
+	public Excecoes() {
+		super();
+	}
+	
+	public Excecoes(Exception e) {
+		super();
+		if(e.getClass().toString().equals("class java.lang.ArithmeticException")) {
+			System.out.println("\nFalha ao divir por zero\n");
+		} else if (e.getClass().toString().equals("class java.util.InputMismatchException")) {
+			System.out.println("\nFalha ao inserir letra em campo de numero\n");
+		} else {
+			System.out.println("\nFalha desconhecida\n");
+			e.printStackTrace();
+		}
+	}
+}

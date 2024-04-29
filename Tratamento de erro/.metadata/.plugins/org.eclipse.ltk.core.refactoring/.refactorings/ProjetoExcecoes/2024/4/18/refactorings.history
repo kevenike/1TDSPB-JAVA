@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;br.com.fiap.excecoes.Exececoes.java&apos; to &apos;Excecoes.java&apos;&#x0D;&#x0A;- Original project: &apos;ProjetoExcecoes&apos;&#x0D;&#x0A;- Original element: &apos;br.com.fiap.excecoes.Exececoes.java&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.fiap.excecoes.Excecoes.java&apos;" description="Rename compilation unit &apos;Exececoes.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;br.com.fiap.excecoes{Exececoes.java" name="Excecoes.java" references="false" stamp="1714401409934" version="1.0"/>
+</session>
