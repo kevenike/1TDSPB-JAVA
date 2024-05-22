@@ -1,0 +1,12 @@
+package br.com.fiap.service;
+
+import br.com.fiap.model.localidades.LocalidadeResponse;
+
+public class LocalidadesIbgeService {
+	
+	public LocalidadeResponse getLocalidadeResponse(int id) {
+		
+		
+		return null;
+	}
+}

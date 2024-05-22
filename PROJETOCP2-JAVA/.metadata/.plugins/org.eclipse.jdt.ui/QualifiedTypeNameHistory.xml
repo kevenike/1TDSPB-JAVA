@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.apache.http.client.methods.HttpGet"/>
+    <fullyQualifiedTypeName name="org.apache.http.impl.client.HttpClientBuilder"/>
+    <fullyQualifiedTypeName name="org.apache.http.impl.client.CloseableHttpClient"/>
+    <fullyQualifiedTypeName name="org.apache.http.client.methods.CloseableHttpResponse"/>
+    <fullyQualifiedTypeName name="org.apache.http.HttpEntity"/>
+    <fullyQualifiedTypeName name="org.apache.http.util.EntityUtils"/>
+    <fullyQualifiedTypeName name="br.com.fiap.service.LocalidadesIbgeService"/>
+    <fullyQualifiedTypeName name="br.com.fiap.model.localidades.LocalidadeResponse"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Type"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,12 @@
+package br.com.fiap.program;
+
+import br.com.fiap.service.LocalidadesIbgeService;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		LocalidadesIbgeService localidadeService = new LocalidadesIbgeService();
+	}
+
+}

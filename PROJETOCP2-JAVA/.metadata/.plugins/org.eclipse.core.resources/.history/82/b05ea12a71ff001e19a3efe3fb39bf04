@@ -1,0 +1,17 @@
+package br.com.fiap.service;
+
+import org.apache.http.client.methods.HttpGet;
+
+import br.com.fiap.model.localidades.LocalidadeResponse;
+
+public class LocalidadesIbgeService {
+	
+	public LocalidadeResponse getLocalidadeResponse(int id) {
+		
+		LocalidadeResponse localidade = null;
+		
+		HttpGet resquest = new HttpGet("https://servicodados.ibge.gov.br/api/v1/" + id + "/mesorregioes");
+		
+		return localidade;
+	}
+}
